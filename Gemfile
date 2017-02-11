@@ -43,6 +43,12 @@ group :development, :test do
   gem 'spring-watcher-listen', '2.0.0'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+  gem 'win32console', '~> 1.3', '>= 1.3.2' if Gem.win_platform?
+  gem 'coffee-script-source', '1.8.0' if Gem.win_platform?
+
 end
 
 group :development do
@@ -65,7 +71,3 @@ group :production do
   gem 'pg', '~> 0.19.0'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem 'win32console', '~> 1.3', '>= 1.3.2' if Gem.win_platform?
-gem 'coffee-script-source', '1.8.0' if Gem.win_platform?
