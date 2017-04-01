@@ -7,9 +7,9 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 set :stage, :production
-server '138.201.178.14', user: 'deploy', roles: %w{app db web}
+server '5.160.247.104', user: 'deploy', roles: %w{app db web}
 
-
+ 
 # role-based syntax
 # ==================
 
