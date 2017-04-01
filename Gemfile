@@ -11,8 +11,7 @@ gem 'rails', '~> 5.0.1'
 # Use ActiveModel has_secure_password
 gem 'bcrypt','3.1.11'
 # Use Puma as the app server
-#gem 'puma', '~> 3.4.0'
-gem 'passenger'
+gem 'puma', '~> 3.8.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,7 +50,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'capistrano', '~> 3.7', '>= 3.7.1'
   gem 'capistrano-rails', '~> 1.2'
-  gem 'capistrano-passenger', '~> 0.2.0'
+  gem 'capistrano3-puma'
   gem 'capistrano-rbenv', '~> 2.1'
 end
 
@@ -63,6 +62,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '~> 0.19.0'
+  gem 'pg'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
