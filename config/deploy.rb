@@ -59,7 +59,7 @@ namespace :deploy do
       end
     end
   end
-  
+
   desc 'Initial Deploy'
   task :initial do
     on roles(:app) do
@@ -79,6 +79,7 @@ namespace :deploy do
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
   after  :finishing,    :restar
+end
 # These are the defaults.
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 
