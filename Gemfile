@@ -52,6 +52,11 @@ group :development do
   gem 'capistrano-rails', '~> 1.2'
   gem 'capistrano3-puma'
   gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-nginx'
+  gem 'capistrano-rails-db'
+  gem 'capistrano-rails-console'
+  gem 'capistrano-upload-config'
+  gem 'sshkit-sudo'
 end
 
 group :test do
