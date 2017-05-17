@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.7.2"
+lock "3.8.0"
 
 set :application, "m"
 set :repo_url, "git@github.com:Liovan/m.git"
@@ -27,7 +27,6 @@ set :deploy_to, "/home/deploy/m"
 # You can configure the Airbrussh format using :format_options.
 
 ## Defaults:
-set :scm,           :git
 set :branch,        :master
 set :format,        :pretty
 set :log_level,     :debug
