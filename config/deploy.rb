@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.8.0"
+lock "3.8.1"
 
 set :application, "m"
 set :repo_url, "git@github.com:Liovan/m.git"
@@ -19,7 +19,7 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-# Default deploy_to directory is /var/www/my_app_name
+# Default deploy _to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/m"
 
 # Default value for :format is :airbrussh.
